@@ -1,0 +1,23 @@
+{
+  "generator": "sfg_binary",
+  "relations": {
+    "r": {
+      "size": 1000
+    },
+    "s": {
+      "size": 1000
+    }
+  },
+  "joins": [{
+    "relations": [{
+        "name": "r",
+        "key": "x"
+      },
+      {
+        "name": "s",
+        "key": "y"
+      }
+    ],
+    "selectivity": 0.001
+  }]
+}

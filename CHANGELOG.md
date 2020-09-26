@@ -2,4 +2,5 @@
 
 ## Current
 
-* Gem created
+- Gem created
+- Added binary creation algorithm

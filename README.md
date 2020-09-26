@@ -13,25 +13,24 @@ For example, input for Linde could be:
   },
   "joins": [
     {
-        "relations": [
-            { "name": "r", "key": "x" },
-            { "name": "s", "key": "y" }
-        ],
-        "selectivity": 0.001
+      "relations": [
+        { "name": "r", "key": "x" },
+        { "name": "s", "key": "y" }
+      ],
+      "selectivity": 0.001
     },
     {
-        "relations": [
-            { "name": "s", "key": "a" },
-            { "name": "t", "key": "b" }
-        ],
-        "selectivity": 0.01
+      "relations": [
+        { "name": "s", "key": "a" },
+        { "name": "t", "key": "b" }
+      ],
+      "selectivity": 0.01
     }
   ]
 }
 ```
 
 This means, that three relations are generated: r, s, and t, with 10000, 1000, and 5000 tuples each. Further, if the join predicate "r.x = s.y" is applied, it has a selectivity of 0.001, and if the join predicate "s.a = t.b" is applied, it has the selectivity 0.01.
-
 
 ## Quickstart
 
